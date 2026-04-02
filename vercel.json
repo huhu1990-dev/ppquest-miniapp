@@ -1,5 +1,6 @@
 {
-  "buildCommand": null,
+  "installCommand": "echo 'skip'",
+  "buildCommand": "echo 'skip'",
   "outputDirectory": "public",
   "rewrites": [
     { "source": "/games/:gameId", "destination": "/games/%5BgameId%5D.html" },

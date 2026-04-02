@@ -2,12 +2,12 @@
   "buildCommand": null,
   "outputDirectory": "public",
   "rewrites": [
-    { "source": "/games/:gameId", "destination": "/games/[gameId].html" },
-    { "source": "/orders/:orderId", "destination": "/orders/[orderId].html" },
-    { "source": "/games", "destination": "/(tabs)/games.html" },
-    { "source": "/orders", "destination": "/(tabs)/orders.html" },
-    { "source": "/profile", "destination": "/(tabs)/profile.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/games/:gameId", "destination": "/games/%5BgameId%5D.html" },
+    { "source": "/orders/:orderId", "destination": "/orders/%5BorderId%5D.html" },
+    { "source": "/games", "destination": "/tabs/games.html" },
+    { "source": "/orders", "destination": "/tabs/orders.html" },
+    { "source": "/profile", "destination": "/tabs/profile.html" },
+    { "source": "/:path*", "destination": "/index.html" }
   ],
   "headers": [
     {

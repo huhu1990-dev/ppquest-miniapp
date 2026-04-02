@@ -1,0 +1,106 @@
+{
+  "apiRoutes": [],
+  "htmlRoutes": [
+    {
+      "file": "./index.tsx",
+      "page": "/index",
+      "namedRegex": "^/(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/login.tsx",
+      "page": "/auth/login",
+      "namedRegex": "^/auth/login(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/games.tsx",
+      "page": "/(tabs)/games",
+      "namedRegex": "^(?:/\\(tabs\\))?/games(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/signup.tsx",
+      "page": "/auth/signup",
+      "namedRegex": "^/auth/signup(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/orders.tsx",
+      "page": "/(tabs)/orders",
+      "namedRegex": "^(?:/\\(tabs\\))?/orders(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./(tabs)/profile.tsx",
+      "page": "/(tabs)/profile",
+      "namedRegex": "^(?:/\\(tabs\\))?/profile(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "expo-router/build/views/Sitemap.js",
+      "page": "/_sitemap",
+      "namedRegex": "^/_sitemap(?:/)?$",
+      "routeKeys": {},
+      "generated": true
+    },
+    {
+      "file": "./checkout.tsx",
+      "page": "/checkout",
+      "namedRegex": "^/checkout(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/reset-password.tsx",
+      "page": "/auth/reset-password",
+      "namedRegex": "^/auth/reset\\-password(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./auth/update-password.tsx",
+      "page": "/auth/update-password",
+      "namedRegex": "^/auth/update\\-password(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./onboarding/game-preferences.tsx",
+      "page": "/onboarding/game-preferences",
+      "namedRegex": "^/onboarding/game\\-preferences(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./order-confirmation.tsx",
+      "page": "/order-confirmation",
+      "namedRegex": "^/order\\-confirmation(?:/)?$",
+      "routeKeys": {}
+    },
+    {
+      "file": "./orders/[orderId].tsx",
+      "page": "/orders/[orderId]",
+      "namedRegex": "^/orders/(?<orderId>[^/]+?)(?:/)?$",
+      "routeKeys": {
+        "orderId": "orderId"
+      }
+    },
+    {
+      "file": "./games/[gameId].tsx",
+      "page": "/games/[gameId]",
+      "namedRegex": "^/games/(?<gameId>[^/]+?)(?:/)?$",
+      "routeKeys": {
+        "gameId": "gameId"
+      }
+    }
+  ],
+  "notFoundRoutes": [
+    {
+      "file": "./+not-found.tsx",
+      "page": "/+not-found",
+      "namedRegex": "^(?:/(?<notfound>.+?))?(?:/)?$",
+      "routeKeys": {
+        "notfound": "not-found"
+      }
+    }
+  ],
+  "redirects": [],
+  "rewrites": []
+}

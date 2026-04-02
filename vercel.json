@@ -1,0 +1,26 @@
+{
+  "buildCommand": null,
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/games/:gameId", "destination": "/games/[gameId].html" },
+    { "source": "/orders/:orderId", "destination": "/orders/[orderId].html" },
+    { "source": "/games", "destination": "/(tabs)/games.html" },
+    { "source": "/orders", "destination": "/(tabs)/orders.html" },
+    { "source": "/profile", "destination": "/(tabs)/profile.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/_expo/static/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    }
+  ]
+}
